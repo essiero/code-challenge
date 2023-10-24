@@ -1,32 +1,35 @@
 // 1. Start with the number 29 and set that equal to a variable named highScore;
 
-
+let highScore = 29;
 // 2. Make a new empty array called myScrabbleTiles.
 
+let myScrabbleTiles = [];
 
 // 3. Put these 6 tile objects into myScrabbleTiles:
-/*
-  { tile: 'N', score: 1 }
-  { tile: 'K', score: 5 }
-  { tile: 'Z', score: 10 }
-  { tile: 'X', score: 8 }
-  { tile: 'D', score: 2 }
-  { tile: 'A', score: 1 }
-*/
+myScrabbleTiles.push({ tile: 'N', score: 1 });
+myScrabbleTiles.push( { tile: 'K', score: 5 });
+myScrabbleTiles.push({ tile: 'Z', score: 10 });
+myScrabbleTiles.push({ tile: 'X', score: 8 });
+myScrabbleTiles.push({ tile: 'D', score: 2 });
+myScrabbleTiles.push({ tile: 'A', score: 1 });
+
+console.log(myScrabbleTiles);
+
 
 
 // 4. Remove the last tile from myScrabbleTiles and save it in a variable named removedTile.
-
+let removedTile = myScrabbleTiles.pop();
+console.log(removedTile);
 
 // 5. Add the following new tile to myScrabbleTiles:
-/*
-  { tile: 'F', score : 4 }
-*/
+
+myScrabbleTiles.push({ tile: 'F', score : 4 });
 
 
-// 6. Complete this function. It needs to be given an array of tile objects. The function will use a for-loop to add up and return the sum of all the scores for a given array of scrabble tiles.
+// 6. Complete this function. It needs to be given an array of tile objects. The function will use a for-loop to add up and return 
+// the sum of all the scores for a given array of scrabble tiles.
 function calculateScore(tiles) {
-
+  console.log(tiles);
 }
 
 
